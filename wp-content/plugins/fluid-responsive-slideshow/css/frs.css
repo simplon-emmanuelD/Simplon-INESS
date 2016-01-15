@@ -1,0 +1,324 @@
+/* CSS for jQuery FRS Plugin 1.2.3
+ * Copyright 2013, tonjoo
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+
+
+/* PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY
+ ================================================== */
+.frs-slideshow-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frs-slideshow-container .frs-slideshow-content {
+  
+    background: #FFFFFF url('frs/loading.gif') no-repeat center center;
+    /*overflow: hidden;*/
+}
+
+.frs-slideshow-container .frs-slideshow-content  > div >  div:first-child{
+    position: relative;    
+}
+
+.frs-slideshow-container .frs-slideshow-content  > div >  div > div.frs-caption {
+    height: 100% !important;
+}
+
+.frs-slideshow-container > .frs-wrapper > .frs-slider-nav {
+    position: static;
+}
+
+/* CONTAINER
+ ================================================== */
+.frs-slideshow-container div.frs-wrapper {
+    position: relative;
+    /*margin-bottom: 25px;
+    margin-top: 10px;*/
+}
+.frs-slideshow-container div.frs-slideshow-content {
+    position: relative;
+    overflow: hidden;
+}
+.frs-slideshow-container > .frs-wrapper > .frs-slideshow-content > .frs-slide-img-wrapper {
+    position: absolute;
+}
+.frs-slideshow-container > .frs-wrapper > .frs-slideshow-content > .frs-slide-img-wrapper > .frs-slide-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden !important;
+    /*width: 100% !important;
+    height: 100% !important;*/
+}
+
+.frs-slideshow-content > img,
+.frs-slideshow-content > div,
+.frs-slideshow-content > a { display: none } 
+
+
+/* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".frs>div" and "div.frs>a" tags in addition to just the .frs-wrapper 
+/* TIMER
+ ================================================== */
+.frs-slideshow-container div.frs-timer {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 99;
+}
+.frs-slideshow-container span.frs-timer-rotator {
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('frs/rotator-left.png');
+    z-index: 99;
+}
+.frs-slideshow-container span.frs-timer-mask {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 40px;
+    z-index: 99;
+    overflow: hidden;
+}
+.frs-slideshow-container span.frs-timer-move {
+    top: 0px;
+    position: absolute;
+    left: 0px;
+}
+.frs-slideshow-container span.frs-timer-mask-turn {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    background-image: url('frs/rotator-right.png');
+    z-index: 99;
+}
+.frs-slideshow-container span.frs-timer-pause {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('frs/pause-black.png') no-repeat;
+    z-index: 4;
+    opacity: 1;
+}
+.frs-slideshow-container span.frs-timer-pause.frs-timer-active { background: url('frs/pause-black.png') no-repeat 0 -40px }
+.frs-slideshow-container div.frs-timer:hover span.frs-timer-pause,
+.frs-slideshow-container span.frs-timer-pause.frs-timer-active { opacity: 1 }
+
+
+/* CAPTIONS
+ ================================================== */
+.frs-slideshow-container span.frs-caption 
+{
+    display: none;
+    height: 0px;
+}
+
+
+/**
+ * FRS Container
+ */
+
+.frs-slideshow-container{
+    width:100%;
+    /*margin-bottom:75px;    
+    margin-top:25px;
+    min-height:250px;*/
+}
+
+@media (max-width:320px){
+  
+  .frs-slideshow-container{
+      min-height:150px;
+  }
+
+}
+
+.frs-slideshow-container h4{
+    font-weight:bold;
+}
+
+.frs-slideshow-container h4,
+.frs-slideshow-container p
+{
+    color:white;
+    line-height: 1;
+}
+
+/*
+ * FRS Responsive Image
+ */
+
+.frs-slideshow-container .frs-slideshow-content img {
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.frs-slideshow-container .frs-timer, 
+.frs-slideshow-container .frs-slider-nav, 
+.frs-slideshow-container .frs-bullets-wrapper {
+    display: none;
+    line-height: normal;
+}
+.frs-slideshow-container .frs-bullets-wrapper .frs-bullets {
+    line-height: normal;
+}
+
+/**
+ * Small Responsive class
+ */
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-small .frs-caption .frs-caption-content{
+    width: 100% !important;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-small .frs-caption .frs-caption-content h4{
+    text-align: center !important;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-small .frs-caption .frs-caption-content p{
+    text-align: center !important;    
+    font-size: 12px !important;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-small .frs-caption .frs-caption-content p.frs-caption-button{
+    font-size: 12px;
+    display: none;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-small .frs-caption{
+    padding: 0px 70px !important;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-small .frs-caption .frs-caption-inner{
+    vertical-align: middle;
+}
+
+/**
+ * Medium Responsive class
+ */
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-medium .frs-caption .frs-caption-content{
+    width: 100% !important;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-medium .frs-caption .frs-caption-content h4{
+    text-align: center !important;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-medium .frs-caption .frs-caption-content p{
+    text-align: center !important;    
+    font-size: 14px;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-medium .frs-caption .frs-caption-content p.frs-caption-button{
+    font-size: 12px;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-medium .frs-caption{
+    padding: 0px 70px !important;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-medium .frs-caption .frs-caption-inner{
+    vertical-align: middle;
+}
+
+.frs-slideshow-container .frs-wrapper.frs-responsive-mobile-medium .frs-timer{
+    display: none !important;
+}
+
+/**
+ * buttton
+ */
+p.frs-caption-button a span {  
+    white-space: nowrap;
+}
+
+
+/* TEXT BOX PREVIEW
+ ================================================== */
+#frs-text-position-preview {
+    padding: 0px;
+}
+
+#frs-position-preview-outer {
+    height: 250px;    
+    background-color: #d9cb9e;
+    padding: 40px;
+}
+
+#frs-position-preview-padding-left {
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 40px;
+    font-size: 16px;
+    left: 0;
+    width: 40px;
+    text-align: center;
+}
+
+#frs-position-preview-padding-top {
+    position: absolute;
+    margin-top: -28px;  font-size: 16px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#frs-position-preview-padding-right {
+    position: absolute; margin-top: 115px; 
+    margin-right: 40px; font-size: 16px;
+    right: 0;
+    width: 40px;
+    text-align: center;
+}
+
+#frs-position-preview-padding-bottom {
+    position: absolute; 
+    margin-top: 260px; font-size: 16px; text-align: center; left: 0; right: 0;
+    margin-left: auto; */ /* margin-right: auto; */;
+    margin-right: auto;
+}
+
+#frs-position-preview-inner {
+    width: 100%;
+    height: 100%;
+    border: 1px dashed #000;
+}
+
+#frs-position-preview-obj {
+    background-color: #2a2c2b;
+    height: 75px;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 21px;
+    position: absolute;
+    left: 80px;
+    right: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#frs-position-preview-obj span {
+    font-size: 16px
+}

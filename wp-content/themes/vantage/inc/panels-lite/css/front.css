@@ -1,0 +1,64 @@
+.panel-grid {
+  zoom: 1;
+}
+.panel-grid:before {
+  content: '';
+  display: block;
+}
+.panel-grid:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.panel-grid-cell {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 1em;
+}
+.panel-grid-cell .panel {
+  zoom: 1;
+}
+.panel-grid-cell .panel:before {
+  content: '';
+  display: block;
+}
+.panel-grid-cell .panel:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.panel-grid-cell .panel.panel-last-child {
+  margin-bottom: 0;
+}
+.panel-grid-cell .widget-title {
+  margin-top: 0;
+}
+.panel-row-style {
+  zoom: 1;
+}
+.panel-row-style:before {
+  content: '';
+  display: block;
+}
+.panel-row-style:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.siteorigin-panels-lite-message {
+  background: #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+  -moz-box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+  box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+  background: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f8f8f8), color-stop(1, #ffffff));
+  background: -ms-linear-gradient(bottom, #f8f8f8, #ffffff);
+  background: -moz-linear-gradient(center bottom, #f8f8f8 0%, #ffffff 100%);
+  background: -o-linear-gradient(#ffffff, #f8f8f8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 4px solid #7ad03a;
+  padding: 15px;
+}

@@ -1,0 +1,38 @@
+@import "mixins";
+
+.panel-grid {
+    zoom: 1;
+	.clearfix();
+}
+.panel-grid-cell {
+	.box-sizing(border-box);
+    min-height: 1em;
+
+	.panel {
+		.clearfix();
+	}
+
+	.panel.panel-last-child {
+		margin-bottom: 0;
+	}
+
+	.widget-title {
+		margin-top: 0;
+	}
+}
+
+.panel-row-style {
+	.clearfix();
+}
+
+.siteorigin-panels-lite-message {
+	background: #fff;
+
+	.box-shadow(~"0 1px 1px 0 rgba( 0, 0, 0, 0.1 )");
+	.gradient(#fff, #f8f8f8, #fff);
+
+	border: 1px solid rgba(0,0,0,0.2);
+	border-left: 4px solid #7ad03a;
+
+	padding: 15px;
+}

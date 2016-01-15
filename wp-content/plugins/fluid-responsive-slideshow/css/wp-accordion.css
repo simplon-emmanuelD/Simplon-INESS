@@ -1,0 +1,132 @@
+/** ===== Floats & clearfix ===== */
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix::before, .clearfix::after {
+    display: table;
+    content: '';
+    line-height: 0;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/** ===== Settings container ===== */
+.settings-container {
+    width: 548px;
+    /*float: right;*/
+    /*clear: right;*/    
+    /*width: 285px;*/
+    /*padding-right: 5px;*/
+}
+.settings-container .widgets-holder-wrap {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+.settings-container .widgets-holder-wrap.closed .sidebar-name {
+    border-width: 0;
+}
+.settings-container .widgets-holder-wrap.closed .sidebar-content {
+    display: none;
+}
+.settings-container .sidebar-content {
+    border-width: 0 1px 1px;
+    border-style: none solid solid;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+    min-height: 20px;
+    border-color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.settings-container .sidebar-content .divider {
+    margin-bottom: 0;
+}
+.settings-container .sidebar-content .field,
+.settings-container .sidebar-content .radio {
+    width: 100%;
+    margin: 1em 0;
+}
+.settings-container .sidebar-content .field span {
+    font-weight: bold;
+    display: block;
+}
+.settings-container .sidebar-content .field {
+    float: left;
+}
+.settings-container .sidebar-content .field input,
+.settings-container .sidebar-content .field select {
+    width: 90%;
+}
+.settings-container .sidebar-content .field input[type="checkbox"] {
+    width: auto;
+    margin-right: 4px;
+}
+.settings-container .sidebar-content .radio > span {
+    font-weight: bold;
+    float: left;
+}
+.settings-container .sidebar-content .radio .buttons {
+    float: right;
+}
+.settings-container .sidebar-content .radio .buttons label {
+    margin-right: 10px;
+}
+.settings-container .sidebar-content .radio .buttons input {
+    margin-top: 0;
+    margin-right: 2px;
+}
+
+.settings-container .sidebar-content .table-content {
+    width: 100%; 
+}
+.settings-container .sidebar-content .table-content td {
+    padding: 10px
+}
+.settings-container .sidebar-content .table-content td label {
+    display: block;
+    padding: 0px;
+}
+.settings-container .sidebar-content .table-content th {
+    vertical-align: top;
+    text-align: left;
+    width: 135px;
+    padding-top: 15px;
+}
+
+.settings-container .dimension-settings .field {
+    width: 45%;
+}
+.settings-container .dimension-settings .field:first-child {
+    margin-right: 5%;
+}
+
+.settings-container .sidebar-name {
+    border-bottom: 1px solid #eee;
+}
+
+.settings-container .closed .sidebar-name {
+    border-width: 0;
+}
+
+.settings-container .sidebar-name h3 {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.settings-container .sidebar-name-arrow:before {
+    width: inherit;
+    right: 0px !important;
+    padding: 8px 10px !important;
+}

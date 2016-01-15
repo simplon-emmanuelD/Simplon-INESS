@@ -1,0 +1,136 @@
+#siteorigin-panels-install-modal {
+
+	@window_width: 600px;
+	@toolbar_height: 60px;
+
+	#siteorigin-panels-install-window {
+		position: fixed;
+		top: 40px;
+		left: 50%;
+		bottom: 40px + @toolbar_height;
+
+		width: @window_width;
+		margin-left: -@window_width/2;
+
+		background: #fff;
+		z-index: 100001;
+
+		box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+		overflow-y: auto;
+	}
+
+	#siteorigin-panels-install-toolbar {
+		box-sizing: border-box;
+		padding: 15px;
+
+		position: fixed;
+		height: @toolbar_height;
+		border-top: 1px solid #e0e0e0;
+		left: 50%;
+		bottom: 40px;
+
+		width: @window_width;
+		margin-left: -@window_width/2;
+
+		background: #f9f9f9;
+		z-index: 100001;
+
+		.button-cancel {
+			margin-left: 10px;
+			font-size: 0.9em;
+		}
+	}
+
+	#siteorigin-panels-install-overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 100000;
+
+		background: rgba(0,0,0,0.7);
+	}
+
+}
+
+#siteorigin-panels-lite-install {
+
+	.panels-banner {
+		padding: 20px;
+		background: #31424a;
+
+		img.icon {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			width: 120px;
+			height: 125px;
+		}
+		
+		.text {
+			margin-left: 150px;
+			padding: 12px 0;
+
+			h2,h3 {
+				margin: 0;
+				margin-bottom: 0.5em;
+				font-weight: 300;
+			}
+
+			h2 {
+				font-size: 1.8em;
+				color: #fff;
+			}
+
+			h3 {
+				color: #ccc;
+			}
+
+			p {
+				margin: 1em 0 0 0;
+
+				a {
+					font-size: 0.9em;
+					border-radius: 2px;
+					display: inline-block;
+					padding: 6px 10px;
+					font-size: 14px;
+					color: #FFF;
+					-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+					-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+					box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+					background: #65b251;
+					background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #65b251), color-stop(1, #84d16d));
+					background: -ms-linear-gradient(bottom, #65b251, #84d16d);
+					background: -moz-linear-gradient(center bottom, #65b251 0%, #84d16d 100%);
+					background: -o-linear-gradient(#84d16d, #65b251);
+
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.content {
+		padding: 20px;
+		color: #555;
+
+		*:first-child {
+			margin-top: 0;
+		}
+
+		*:last-child {
+			margin-bottom: 0;
+		}
+
+		p {
+			margin: 1.5em 0;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

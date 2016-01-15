@@ -1,0 +1,17 @@
+body{
+	overflow: hidden;
+}
+
+#wpwrap{
+	height: 100%;
+}
+#wpcontent{
+	height: 100%;
+	box-sizing: border-box;
+	padding-bottom: 51px;
+}
+
+iframe{
+	width: 100%;
+	height: 100%;
+}

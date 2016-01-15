@@ -1,0 +1,31 @@
+/* BUTTONS
+ ================================================== */
+
+p.frs-caption-button.frs-buttonskin-black {
+	padding-top: 20px;
+	padding-bottom: 13px;
+}
+
+p.frs-caption-button.frs-buttonskin-black a {
+	text-decoration: none;
+	font-size: 13px;
+}
+
+p.frs-caption-button.frs-buttonskin-black a span {	
+	padding: 5px 10px;
+	border-width: 2px;
+	border-style: solid;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	color: #000;
+	border-color: #000;
+}
+
+p.frs-caption-button.frs-buttonskin-black a:hover span {	
+	color: #fff;
+	border-color: #000;
+	background-color: #000;
+}
